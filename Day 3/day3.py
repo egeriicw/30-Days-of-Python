@@ -87,7 +87,8 @@ print(str(float(len('python'))))
 
 # Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
 even_num = int(input("Number: "))
-result = (even_num % 2) == 0
+result = [(even_num % 2) == 0]
+print(result[0])
 
 
 # Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
@@ -97,18 +98,48 @@ print(comparison_number == floor_division)
 
 # Check if type of '10' is equal to type of 10
 
+print(type('10') == type(10))
 
 # Check if int('9.8') is equal to 10
+
+print(int(float('9.8')) == 10)
+
+
 # Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
 # Enter hours: 40
 # Enter rate per hour: 28
 # Your weekly earning is 1120
+
+hours = int(input("Hours: "))
+rate = int(input("Rate: "))
+earnings = hours * rate
+
+print("Your weekly earning is ", earnings)
+
+
 # Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
 # Enter number of years you have lived: 100
 # You have lived for 3153600000 seconds.
+
+years = int(input("years you have lived: "))
+sec = years * 365 * 24 * 60 * 60
+print("You have lived for {0} seconds".format(str(sec)))
+
+
 # Write a Python script that displays the following table
 # 1 1 1 1 1
 # 2 1 2 4 8
 # 3 1 3 9 27
 # 4 1 4 16 64
 # 5 1 5 25 125
+
+
+table = []
+for i in range(5):
+    x = i + 1
+    table.append([x, 1, x, x**2, x**3])
+
+print(table)
+
+
+
