@@ -45,14 +45,42 @@ print('Python for Everyone'.replace('Everyone', 'All'))
 print(company.split(' '))
 
 # "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(','))
+
 # What is the character at index 0 in the string Coding For All.
+
+print(company[0])
+
 # What is the last index of the string Coding For All.
+print(len(company)-1)
+print(company[13])
+
 # What character is at index 10 in "Coding For All" string.
+print(company[10])
+
 # Create an acronym or an abbreviation for the name 'Python For Everyone'.
+acronym = ''
+
+for i in 'Python For Everyone'.split(' '):
+    acronym += i[0]
+print(acronym)
+      
 # Create an acronym or an abbreviation for the name 'Coding For All'.
+acronym = ''
+
+for i in 'Coding For All'.split(' '):
+    acronym += i[0]
+print(acronym)
+
 # Use index to determine the position of the first occurrence of C in Coding For All.
+print('Coding for All'.index('C'))
+
 # Use index to determine the position of the first occurrence of F in Coding For All.
+print('Coding For All'.index('F'))
+
 # Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print('Coding for All People'.rfind('l'))
+
 # Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 # Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 # Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
