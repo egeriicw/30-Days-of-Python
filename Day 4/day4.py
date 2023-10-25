@@ -89,6 +89,8 @@ print('Coding for All People'.rfind('l'))
 # Does ''Coding For All' start with a substring Coding?
 # Does 'Coding For All' end with a substring coding?
 # '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+test = 'test'
+
 # Which one of the following variables return True when we use the method isidentifier():
 # 30DaysOfPython
 # thirty_days_of_python
